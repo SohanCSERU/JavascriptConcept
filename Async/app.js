@@ -1,6 +1,6 @@
 console.log("Starting");
 
-/*
+
 // This part is for without use the callback keyword
 function loginUser(email,password,my_function){
     my_function(email,password);
@@ -11,7 +11,7 @@ function printUserInfo(email,password){
 }
 
 console.log(loginUser('a@gmail.com',1234567,printUserInfo)); 
-*/
+
 
 /* / ------------------------------------------------
 
@@ -31,6 +31,7 @@ function loginUser(email,password,callback){
 //         callback('Names are');
 //     },2000);
 // }
+
 const user = loginUser('a@gmail.com',1234567, (name) => {
     console.log(typeof name);
     console.log(name);
