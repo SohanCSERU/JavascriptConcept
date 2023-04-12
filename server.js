@@ -7,6 +7,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 400
   res.setHeader('Content-Type', 'text/plain')
   console.log("Hello world!");
+  console.log(__dirname.toString());
   res.end('Hello World\n')
 })
 
