@@ -10,7 +10,7 @@ console.log({ my_file_path });
 //     next();
 // }
 
-app.use('/public',express.static(my_file_path));
+app.use('/static',express.static(my_file_path));
 
 app.get('/path1', (req, res) => {
     console.log('path 1 called');

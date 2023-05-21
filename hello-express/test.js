@@ -1,13 +1,24 @@
 const express = require('express')
 const app = express()
+
+console.log( typeof express);
+console.log( typeof app);
 const port = 3001
 
-const logedin = false;
 
 const my_file_path = __dirname + '/public';
 console.log({ my_file_path });
 
 app.use( express.static(my_file_path));
+
+app.get('/', (req, res) => {
+    res.send("Root path is called !");
+});
+
+
+app.post('/root', (req, res) => {
+    res.send('Got a POST request')
+});
 
 app.get('/path1', (req, res) => {
     console.log('path 1 called');

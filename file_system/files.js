@@ -30,6 +30,6 @@ if(!fs.existsSync('./newDocs')){
         if(err){
             console.log(err);
         }
-        console.log('Directory deleted');
+        console.log('Directory deleted'); 
     });
 }

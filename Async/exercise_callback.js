@@ -8,10 +8,10 @@ function callme(name){
 }
 
 function a (name) {
-    console.log("name in a function", name);
+    console.log("name in \'a\' function", name);
     
     setTimeout(()=>{
-        callme(name);
+        callme('sohan');
     },2000);
 }
 
